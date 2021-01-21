@@ -1,33 +1,28 @@
 <template>
-    <div id="app">
-        <div style="border: red 1px solid">
-            <EditForm></EditForm>
-        </div>
-
-        <!-- <asyncexample></asyncexample> -->
-        <!-- <home></home> -->
-        <!-- <component :is="currentView"></component> -->
-    </div>
+  <div id="app">
+    <EditForm></EditForm>
+  </div>
 </template>
 
 <script>
-    import EditForm from "./components/EditForm.vue";
+import EditForm from './components/EditForm.vue'
 
-    // var home = { template: "<div>我是主页</div>" };
-    export default {
-        name: "app",
-        components: {
-            EditForm,
-            // home,
-            // asyncexample: { template: "<div>I am async!</div>" },
-        },
-        // computed: {
-        //     currentView() {
-        //         return home;
-        //     },
-        // },
-    };
+
+export default {
+  name: 'app',
+  components: {
+    EditForm,
+  }
+}
 </script>
 
 <style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
